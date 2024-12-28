@@ -9,7 +9,7 @@ class AutoClicker:
     def __init__(self, master):
 
         self.master = master
-        self.master.title("Auto Clicker v1.0")
+        self.master.title("agent's autoclicker v1.0")
         self.master.iconbitmap("favicon.ico")
         self.master.geometry("300x250")
         self.master.resizable(False, False)
@@ -149,11 +149,13 @@ class AutoClicker:
         def callback(url):
             webbrowser.open_new(url)
 
-        labela = tk.Label(newwin, text="Auto Clicker v1.0.0", font=("Arial", 13))
+        labela = tk.Label(newwin, text="agent's autoclicker", font=("Arial", 13))
         labela.pack()
-        labelb = tk.Label(newwin, text="GitHub (agentn86)", cursor="hand2", fg="blue")
+        labelb = tk.Label(newwin, text="Version 1.0.0")
         labelb.pack()
-        labelb.bind("<Button-1>", lambda e: callback('https://github.com/agentN86/autoclicker'))
+        labelc = tk.Label(newwin, text="GitHub (agentn86)", cursor="hand2", fg="blue")
+        labelc.pack()
+        labelc.bind("<Button-1>", lambda e: callback('https://github.com/agentN86/autoclicker'))
         
 
 
